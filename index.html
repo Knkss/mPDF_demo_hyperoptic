@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HyperOptic</title>
+
+    <style type="text/css">
+
+        body{
+            position: relative;
+            margin: 75px;
+             font-family: Arial, sans-serif;
+        }
+
+        .container{
+            margin: 75px;
+        }
+        h2{
+            color: #216ce4;
+        }
+
+        .num-details {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .highlight{
+        color: #216ce4;
+        font-weight: bold;
+
+      }
+
+
+
+      img.bottom-right {
+          position: absolute;
+          bottom: -75px;
+          right: -75px;
+      }
+
+
+
+      #logo{
+        height: 40%;
+        width: 40%;
+    }
+
+/* Designing all grid */
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Designing all grid-items */
+.grid-container-1 div{
+    background-color: white;
+    text-align: left;
+}
+
+/* Grid Column */
+.upper-left {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+}
+
+.upper-right {
+    grid-column-start: 3;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Designing all grid-items */
+.grid-container-2 div{
+    text-align: left;
+}
+
+.lower-left {
+    /*grid-column-start: 1;
+    grid-column-end: 2;*/
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: #f1f1f3 !important;
+    text-align: left; 
+    align-self: start;
+    margin : 150px 10px 10px 0;
+    padding : 6%; 
+}
+
+.lower-right {
+    /*grid-column-start: 2;
+    grid-column-end: 4;*/
+    grid-row-start: 1;
+    grid-row-end: 5;
+    text-align: left; 
+    padding : 5% 0 5% 5%;; 
+}
+
+.box {
+    border-color: #216ce4;
+    border-width: 1px;
+    border-style: solid;
+}
+.box p{
+    padding:12px;
+}
+.box .title{
+    background-color:#216ce4;
+    color : white;
+    margin: 0 !important;
+    font-size: 1.5rem;
+    padding:12px;
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+     <div class="grid-container-1">
+        <div class="upper-left">
+            <div class="logo">
+                <img src="logo2.PNG"  alt="Hyperoptic Logo" id ="logo" >
+            </div>
+
+            <div class="recipient-info">
+                <p>Mr John Smith,</p>
+                <p>Acme Supplies,</p>
+                <p>1 Lordship Lane</p>
+                <p>LONDON</p>
+                <p>N10 1HH</p>
+            </div>
+
+        </div>
+
+
+        <div class="upper-right">
+            <div class="upper-section-1">
+                <h2>Your dates</h2>
+                <hr>
+
+                <p class="num-details">
+                    <span>Invoice date:</span>
+                    <span>1st February 2023</span>
+                </p>
+                <p class="num-details">
+                 <span>Payment date:</span>
+                 <span>28th February 2023</span>
+             </p>
+             <p class="num-details">
+                 <span>Termination date:</span>
+                 <span>28th February 2023</span>
+             </p>
+         </div>
+         <br>
+         <div class="upper-section-2">
+            <h2>Your account details</h2>
+            <hr>
+            <p class="num-details">
+                <span>Account number:</span>
+                <span>338188</span>
+            </p>
+            <p class="num-details">
+                <span>Invoice number:</span>
+                <span>14285551</span>
+            </p>
+            <p class="num-details">
+                <span>Registration number:</span>
+                <span>01234389</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="grid-container-2">
+    <div class="lower-left">
+        <div class="welcome-section-1">
+            <h2>Hello</h2>
+            
+            <p>Here is your latest bill from Hyperoptic.</p>
+
+            <p>You'll be able to view this bill, as well as any previous ones, on <span class="highlight">My Account</span> whenever you like.</p>
+            
+            <p>If you have any questions about your bill, please visit our <span class="highlight">billing page</span>, where you can find more info on understanding your bill.</p>
+            <br>
+        </div>
+        <hr>
+        <div class="welcome-section-2">
+            <h2>Did you know?</h2>
+            
+            <p>We have a <span class="highlight">Help section</span> on our website with loads of useful info on our router, invoicing, technical support - and lots more.</p>
+            
+        </div>
+        <hr>
+        <div class="welcome-section-3">
+            <h2>Not looking right?</h2>
+            
+            <p>If this bill looks a bit different, it may be because you've recently changed your package/payment date, had a bill credit/charge applied or are at the end of a promotional period. Alternatively, if you've asked to cancel your service, you may see termination-related changes. If you're concerned, please get in touch.</p>
+        </div>
+    </div>
+    <div class="lower-right">
+        <div class="bill section">
+            <h2>Your bill</h2>
+            <hr>
+            <p><strong>Your package: 30Mb Fibre Connection - Broadband & Phone</strong></p>
+            <p>
+                <strong>Your phone number: </strong>
+                <strong> 442080636039</strong>
+            </p>
+            <div class="account-section">
+                <p class="num-details">
+                    <span>Broadband charges</span>
+                    <span>£30.00</span>
+                </p>
+                <p class="num-details">
+                    <span>Extras & Discounts</span>
+                    <span>- £10.00</span>
+                </p>
+                <p class="num-details">
+                    <span>Call charges</span>
+                    <span>£10.00</span>
+                </p>
+                <hr>
+                <h2 class="num-details">
+                    <span>Total new charges (excl. VAT)</span>
+                    <span>£40.00</span>
+                </h2>
+                <p class="num-details">
+                    <span>VAT (at 20%)</span>
+                    <span>£4.00</span>
+                </p>
+                <h2 class="num-details">
+                    <span>Total new charges (incl. VAT)</span>
+                    <span>£44.00</span>
+                </h2>
+            </div>
+            <br>
+
+            <div class="account-section">
+                <h2>Account summary</h2>
+                <hr>
+                <p class="num-details">
+                    <span>Balance from your previous bill</span>
+                    <span>£30.00</span>
+                </p>
+                <p class="num-details">
+                    <span>Payment received - Thank you</span>
+                    <span>-£10.00</span>
+                </p>
+                <h2 class="num-details">
+                    <span>Account balance brought forward</span>
+                    <span>£20.00</span>
+                </h2>
+            </div>
+
+            <div class="box">
+                <p class="title num-details">
+                    <span>Total amount due</span>
+                    <span>£64.00</span>
+                </p>
+                <p>Please ensure payment is made by <strong>28th February 2020</strong></p>
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+
+    </div>
+    <img src="bottom.PNG" alt="Your Image" class="bottom-right">
+
+</body>
+</html>
